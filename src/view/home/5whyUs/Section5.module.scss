@@ -1,0 +1,46 @@
+.service-container{
+  flex-wrap: wrap;
+  padding-block: 2rem;
+
+  @media (max-width: 1024px) {
+    padding-block: 1rem;
+  }
+}
+
+.services {
+  //margin-left: 6rem;
+  padding: .5rem;
+  padding-block: 2rem;
+  border-left: 1px solid #00000020;
+  transition: all 200ms ease-in-out;
+  flex: 1;
+  gap: 2rem;
+
+  @media (max-width: 1024px) {
+    flex: 0 0 45%;
+    gap: 1rem;
+    padding-block: 1rem;
+  }
+
+  @media (max-width: 420px){
+    flex: 1;
+    gap: .5rem;
+    padding-block: 0;
+  }
+
+  &:hover{
+    border-left: 1px solid #000000;
+    background-color: #00000005;
+  }
+
+  a{
+    color: var(--mantine-color-dark-2);
+    text-decoration:none;
+    transition: color 200ms ease-in-out;
+    
+    &:hover{
+      cursor: pointer;
+      color: var(--mantine-color-dark-8);
+    }
+  }
+}

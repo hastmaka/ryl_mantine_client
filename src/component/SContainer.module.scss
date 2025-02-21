@@ -1,0 +1,7 @@
+.s-container{
+  padding-inline: 1rem;
+
+  @media (max-width: 768px) {
+    padding-inline: .5rem;
+  }
+}

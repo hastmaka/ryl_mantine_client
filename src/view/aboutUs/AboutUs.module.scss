@@ -1,0 +1,21 @@
+.image {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-top-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+
+  @media (max-width: 1024px) {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 5rem;
+  }
+}
+
+.image-odd {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-top-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+
+  @media (max-width: 1024px) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 5rem;
+  }
+}

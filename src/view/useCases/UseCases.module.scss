@@ -1,0 +1,84 @@
+//use cases card
+.card-wrapper {
+  background-color: transparent;
+  padding: 0;
+  transition: all 200ms ease-in-out;
+
+  &:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 15px 60px -36px rgba(0, 0, 0, 0.45);
+
+    .card-body {
+      padding: 1rem;
+    }
+
+    .section {
+      img {
+        filter: blur(2px);
+      }
+
+      .btn {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+
+  .section {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    flex: 1;
+
+    max-height: 400px;
+    //min-height: 400px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 4px;
+      transition: all 200ms ease-in-out;
+    }
+
+    .btn {
+      position: absolute;
+      bottom: 0;
+      top: 50%;
+      transform: translateY(100%);
+      opacity: 0;
+      transition: all 400ms ease, background-color 200ms ease;
+
+      background-color: var(--mantine-color-primary-0);
+      backdrop-filter: blur(20px);
+      color: #f9f9f9;
+
+      &:hover {
+        background-color: rgba(249, 249, 249, 0);
+        color: var(--mantine-color-primary-2);
+        border: 0.0625rem solid var(--mantine-color-primary-2);
+      }
+    }
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+}
+
+.text {
+  text-align: justify;
+  column-count: 3;
+  column-gap: 2rem;
+
+  @media (max-width: 1024px) {
+    column-count: 2;
+  }
+
+    @media (max-width: 768px) {
+      column-count: 1;
+    }
+  }

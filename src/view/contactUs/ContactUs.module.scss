@@ -1,0 +1,9 @@
+.text{
+  text-align: justify;
+  column-count: 3;
+  column-gap: 2rem;
+
+  @media (max-width: 768px) {
+    column-count: 1;
+  }
+}

@@ -1,0 +1,26 @@
+.item {
+  background-color: rgba(7, 86, 103, 0.8);
+  box-shadow: var(--mantine-shadow-lg);
+  padding: .5rem;
+  border-radius: 4px 0 0 4px;
+  transition: all 0.2s;
+  position: relative;
+  &:hover {
+    background-color: rgba(7, 86, 103, 0.6);
+  }
+}
+
+.setting {
+  color: white;
+  position: absolute;
+  white-space: nowrap;
+  opacity: 0;
+  padding-left: 2rem;
+  transform: translateX(100%);
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.item:hover .setting {
+  opacity: 1;
+  transform: translateX(0);
+}

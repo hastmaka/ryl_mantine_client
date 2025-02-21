@@ -1,0 +1,39 @@
+.card-wrapper {
+  background-color: transparent;
+  padding: 0;
+  transition: all 200ms ease-in-out;
+  height: auto;
+  display: flex;
+
+  &:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 15px 60px -36px rgba(0, 0, 0, 0.45);
+
+    .card-body {
+      padding: 1rem;
+    }
+  }
+
+  .title {
+    transition: all 200ms ease-in-out;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+}
+
+//blog by id
+.adornment {
+
+}
+
+//tags
+.pill {
+  transition: all 200ms ease-in-out;
+  &:hover {
+    cursor: pointer;
+    background-color: var(--color-2);
+    box-shadow: var(--box-shadow-xl);
+  }
+}

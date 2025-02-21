@@ -1,0 +1,47 @@
+.logo{
+  width: clamp(12rem, 18rem + 10px, 20rem);
+  padding: 1rem;
+  img{
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(#00000030 1px 10px 5px);
+  }
+
+}
+
+.list-container{
+  list-style: none;
+  a {
+    font-weight: 600;
+    color: var(--mantine-color-dark-8);
+    &:hover{
+      cursor: pointer;
+      color: var(--mantine-color-dark-2)
+    }
+  }
+}
+.link{
+  text-decoration: none;
+}
+
+.link-active{
+  color: var(--mantine-color-dark-5) !important;
+}
+
+.anchor-link{
+  color: var(--mantine-color-dark-5)
+}
+
+.modal-close-btn {
+  svg {
+    color: #FAFFFD;
+  }
+
+  &:hover {
+    background-color: rgba(250, 255, 253, 0.44);
+    svg {
+      color: #232323;
+    }
+
+  }
+}
