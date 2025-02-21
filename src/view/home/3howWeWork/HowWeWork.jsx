@@ -7,7 +7,7 @@ import {howWeWorkData} from "../../../static/howWeWorkData.js";
 export default function HowWeWork() {
     const lang = useLanguage()
     return (
-        <SContainer bg='#f9f9f9'>
+        <SContainer bg='radial-gradient(circle, #e7e7e7 6%, #fff 6%) 0 0 / 2rem 2rem'>
             <Flex
                 direction={{base: 'column', md: 'row'}}
                 py={{base: '2rem', md: '4rem'}}

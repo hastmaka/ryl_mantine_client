@@ -78,7 +78,7 @@ export default function Slides({data, onClick, btnText}) {
                 </MotionUl>
             </Container>
 
-             <Text className={classes['fancy-1']}>@ 2024 RY&L</Text>
+             <Text className={classes['fancy-1']}>@ {new Date().getFullYear()} RY&L</Text>
              <Text className={classes['fancy-2']}>
                  {language === 'en'
                      ? '#marketing / #development / #design'

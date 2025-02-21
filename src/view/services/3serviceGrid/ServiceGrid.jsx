@@ -4,11 +4,12 @@ import EzTitle from "@/component/EzTitle.jsx";
 import useLanguage from "@/util/hook/useLanguage.jsx";
 import ServiceCard from "./ServiceCard.jsx";
 import {ServiceCardData} from "@/static/ServiceCardData.js";
+import classes from '../Services.module.scss';
 
 export default function ServiceGrid() {
     const lang = useLanguage()
     return (
-        <SContainer bg='#f9f9f9'>
+        <SContainer className={classes['service-grid']}>
             <Stack py={{base: '2rem', md: '4rem'}} gap={0}>
                 <EzTitle h3={lang('service.service-grid.h3')} h4={lang('service.service-grid.h4')}/>
 
